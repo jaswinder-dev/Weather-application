@@ -3,9 +3,9 @@ $(document).ready(function () {
     // making required variables
 
     //API KEY for getting weather data
-    const Weather_KEY = '0dc15d5485ce412ba1e71054241101',
+    const Weather_KEY = '',
         //API KEY for getting the picture of the location searched
-        Picture_Client_ID = 'EguJ9v-ji8UyMwYwOxBy_z-J3xBkYW2lWJxTaSdPRI0',
+        Picture_Client_ID = '',
         days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         months = ['Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
 
