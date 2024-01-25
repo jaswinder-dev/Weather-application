@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+*::-webkit-scrollbar {
+    width: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --h1-font-size: 1.7rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.8rem;
+    --indicator-color: #b30000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.inactive {
+    opacity: 0;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
+}
+
+#message {
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius: 8px;
+    background-color: red;
+    color: #fff;
+    z-index: 100;
+    padding: 1em 2em;
+    display: none;
+}
+
+#message p {
+    font-size: 1.8rem;
+}
+
+.parent {
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: space-around;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.parent header header {
+    margin-bottom: 3em;
+}
+
+.parent header h1 {
+    font-size: var(--h1-font-size);
+    font-size: 200;
+}
+
+.parent header h2 {
+    font-size: var(--normal-font-size);
+    font-weight: 600;
+}
+
+.parent .weather_display {
+    width: calc(100% - 400px);
+    min-height: 100vh;
+    text-shadow: 1px 1px 1px #000, -1px -1px 1px #000;
+}
+
+.parent .weather_display .temperature_conditions p:first-child {
+    font-size: 5rem;
+}
+
+.parent .weather_display .temperature_conditions ul{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 30px;
+    padding: 0.3em 1.5em;
+}
+
+.parent .weather_display .temperature_conditions li {
+    padding: 0 0.7em;
+    font-size: var(--small-font-size);
+}
+
+.parent .weather_display .temperature_conditions li:last-child {
+    padding: 0;
+}
+
+.parent .weather_display .temperature_conditions span {
+    font-weight: lighter;
+    margin-right: 0.1em;
+}
+
+.parent main {
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.parent main .date_time .time {
+    font-size: 2rem;
+}
+
+.parent main .date_time .date {
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+}
+
+.parent .weather_info {
+    width: 400px;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    min-height: 100vh;
+}
+
+.parent .weather_info form {
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease;
+}
+
+.parent .weather_info form input {
+    border: 0;
+    outline: transparent;
+    border-radius: 30px;
+    padding: 0.3em 1em;
+    font-size: var(--small-font-size);
+    background-color: transparent;
+    color: #fff;
+}
+
+.parent .weather_info button {
+    border: 0;
+    outline: transparent;
+    background-color: var(--indicator-color);
+    border-radius: 50%;
+    color: #fff;
+    padding: 0.3em;
+}
+
+.parent .weather_info .search_icon {
+    margin-left: 0.8em;
+    user-select: none;
+}
+
+.parent .weather_info .search_icon span {
+    color: #fff;
+    cursor: pointer;
+}
+
+.parent .weather_info .weather_blob {
+    padding: 2em 0;
+}
+
+.parent .weather_info .weather_blob img {
+    width: 100px;
+    height: auto;
+}
+
+.parent .weather_info .navigation {
+    margin-bottom: 1em;
+}
+
+.parent .weather_info .navigation li a.active{
+    transition: all 0.3s ease;
+    background-color: var(--indicator-color);
+    border-radius: 3px;
+}
+
+.parent .weather_info .navigation li a{
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.parent .weather_info .navigation li:first-child{
+    margin-right: 0.5em;
+}
+
+.parent .weather_info .navigation a{
+    color: #fff;
+    font-size: var(--small-font-size);
+}
+
+.parent .records .record_slider {
+    width: 200%;
+    overflow-y: hidden;
+    position: relative;
+    top: 0;
+    right: 0;
+    transition: all 0.4s ease;
+}
+
+.parent .records .record_slider>div {
+    width: 50%;
+    max-height: 300px;
+    overflow-x: auto;
+}
+
+.parent .current_record h4,
+.parent .forecast_record h4,
+.parent .current_record p,
+.parent .forecast_record p {
+    font-size: var(--small-font-size);
+}
+
+.parent .current_record li,
+.parent .forecast_record li {
+    /* border-bottom: 1px solid #707070; */
+    padding: 0.7em 1em;
+}
+
+.parent .forecast_record img {
+    width: 30px;
+    height: auto;
+    margin-right: 0.5em;
+}

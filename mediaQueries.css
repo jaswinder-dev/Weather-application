@@ -1,0 +1,33 @@
+@media screen and (max-width: 930px) {
+    .parent .weather_display{
+        width: calc(100% - 300px);
+    }
+    .parent .weather_info{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .parent{
+        flex-direction: column;
+    }
+    .parent .weather_display{
+        width: 100%;
+        min-height: 50vh;
+    }
+    .parent .weather_info{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    html{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    html{
+        font-size: 70%;
+    }
+}
